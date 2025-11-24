@@ -13,13 +13,18 @@
 }
 
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  line-height: 0.4em;
-  letter-spacing: 0.01em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 0.4em;
+    letter-spacing: 0.01em;
 }
 
 
@@ -96,9 +101,6 @@ div.suesses {
     background-color: rgb(214, 214, 223);
     width: 50vw;
 }
-div p {
-    background-color: yellow;
-}
 
 .torte {
     width: 50vw;
@@ -115,4 +117,30 @@ span.lowercase {
 
 p.ausruecken {
     text-indent: 2em;
+}
+
+/* Selektor für alle p-Elemente, die Nachkommen von div-Elementen sind 
+div p {
+    background-color: yellow;
+}
+*/
+
+/* Selektor für alle a-Elemente, die direkte Kinder von div-Elementen sind */
+div > a {
+    background-color: red;
+}
+
+/* Selektor für alle a-Elemente, die unmittelbar auf ein div-Element folgen
+div + a {
+    background-color: #ff0000;
+}
+*/
+
+/* Selektor für alle a-Elemente, die Geschwister von div-Elementen sind */
+div ~ a {
+    background-color: rgb(255, 0, 0);
+}
+
+div.snacks p:nth-child(2n) {
+    background-color: #fff000;
 }
