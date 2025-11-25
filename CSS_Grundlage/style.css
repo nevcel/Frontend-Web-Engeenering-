@@ -144,3 +144,19 @@ div ~ a {
 div.snacks p:nth-child(2n) {
     background-color: #fff000;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+    
+}
+
+th {
+    background-color: aquamarine;
+}
+
+tfoot {
+    background-color: gray;
+}
