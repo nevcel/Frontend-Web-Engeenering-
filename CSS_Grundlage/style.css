@@ -145,10 +145,9 @@ div.snacks p:nth-child(2n) {
     background-color: #fff000;
 }
 
-table, th, td {
+.tableEmployees, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    padding: 10px;
     text-align: left;
     
 }
@@ -160,3 +159,35 @@ th {
 tfoot {
     background-color: gray;
 }
+
+.kontaktTable td {
+    border: none;
+}
+
+#name::placeholder,#nachname::placeholder,#telefonnummer::placeholder {
+    font-style: italic;
+    color: rgb(90, 163, 185);
+}
+
+input{
+    border: 1px solid black;
+}
+
+#name,#nachname {
+    background-color: #BBBBFF;
+}
+
+.bewertung td{
+    border: none
+}
+
+#arbeitnehmende {
+    background-color: #BBBBFF;
+}
+#begleitperson:in-range {
+    background-color: green;
+}
+#begleitperson:out-of-range {
+    background-color: red;
+}
+

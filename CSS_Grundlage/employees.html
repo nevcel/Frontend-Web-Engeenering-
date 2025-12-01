@@ -15,9 +15,9 @@
     <br>
     <a href="contact.html" title="Kontakt">Kontakt</a>
     <br>
-    <table>
+    <table class="tableEmployees">
         <caption style="caption-side: top">Produktion</caption>
-        <thead>
+        <thead >
             <colgroup>
                 <col>
                 <col>
@@ -65,6 +65,68 @@
         <tfoot>
         </tfoot>
     </table>
+
+    <form>
+        <fieldset>
+            <legend>Bewertung</legend>
+            <table class="bewertung">
+                <tr>
+                    <td><label for="arbeitnehmende">Arbeitnehmende</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input list="arbeitnehmenden" name="arbeitnehmende" id="arbeitnehmende">
+                        <datalist id="arbeitnehmenden">
+                            <option value="Ella Haper">Filiale Circular quay</option>
+                            <option value="Sue Mason">Filiale Circular quay</option>
+                            <option value="James Avery">Filiale Circular quay</option>
+                            <option value="Evelyn Jackson">Filiale town Hall</option>
+                            <option value="Elenor Wyatt">Filiale town Hall</option>
+                            <option value="Lilian Smith">Filiale town Hall</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="bewertung">Bewertung</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="bewertung">
+                            <optgroup label="Gute Wertung">
+                                <option value="sehr gut" selected>sehr gut</option>
+                                <option value="gut">gut</option>
+                                <option value="zufrieden">zufrieden</option>
+                            </optgroup>
+                            <optgroup label="Schlechte Wertung">
+                                <option value="schwach">schwach</option>
+                                <option value="schlecht">schlecht</option>
+                                <option value="unterirdisch">unterirdisch</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="begleitperson">Anzahl Begleitperson</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" id="begleitperson" min="0" max="10" name="begleitperson" value="0">
+                    </td>
+                </tr>
+                 <tr>
+                    <td><label for="kommentar">Kommentar</label></td>
+                </tr>
+                 <tr>
+                    <td>
+                        <textarea name="kommentar" cols="20" rows="3"></textarea>
+                    </td>
+                </tr>
+
+            </table>
+             <button type="submit">Absenden</button>
+        </fieldset>
+
+    </form>
+
 </body>
 
 </html>
