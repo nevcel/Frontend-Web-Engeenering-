@@ -43,28 +43,45 @@ span {
     font-size: 1.8em;
 }
 
+/* Überschriften Farben und Texttransformation */
 h3 {
     color: #a52a2a;
     text-transform: uppercase;
-}
-
-a:visited {
-    color: #008000;
-}
-
-a:hover {
+    /*text-decoration bespiele:
     text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: none;    
+    */
+
 }
 
-a:active {
-    color: hsl(0, 100%, 50%);
-}
-
+/* Pseudoklassen für Links */
 a:link {
     color: rgb(0, 0, 255);
     text-decoration: none;
 
 }
+/* Pseudoklassen für Links */
+a:visited {
+    color: #800000;
+}
+/* Pseudoklassen für Links */
+a:hover {
+    text-decoration: underline;
+}
+/* Pseudoklassen für Links */
+a:active {
+    color: hsl(0, 100%, 50%);
+}
+
+/* Grössen Einheiten, vmax, vmin, vh, vw 
+.squarque {
+    width: 90vmin;
+    height: 90vmin;
+    background-color: rgb(0, 255, 255);
+}
+*/
 
 /*body {
 
@@ -85,6 +102,7 @@ a:link {
     color: rgb(210, 10, 10);
 }
 
+/* Klasse für unterstrichenen Text */
 .unterstrichen {
     text-decoration: underline;
 }
@@ -97,6 +115,7 @@ li {
     font-size: 0.8rem;
 }
 
+
 div.suesses {
     background-color: rgb(214, 214, 223);
     width: 50vw;
@@ -107,6 +126,7 @@ div.suesses {
 
 }
 
+/* Selektor für ul-Elemente, die Nachkommen von li-Elementen sind */
 li ul {
     font-variant: small-caps;
 }
@@ -114,6 +134,7 @@ li ul {
 span.lowercase {
     text-transform: lowercase;
 }
+
 
 p.ausruecken {
     text-indent: 2em;
@@ -140,6 +161,12 @@ div + a {
 div ~ a {
     background-color: rgb(255, 0, 0);
 }
+
+/* Selektor für erste p-Elemente, die direkte Kinder von div-Elementen sind 
+p:first-child {
+    background-color: #00ff00;
+}
+*/
 
 div.snacks p:nth-child(2n) {
     background-color: #fff000;
