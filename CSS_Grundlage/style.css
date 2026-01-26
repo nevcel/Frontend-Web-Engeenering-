@@ -9,9 +9,13 @@
     font-weight: 300;
     line-height: 1.9em;
     letter-spacing: 0.01em;
-
+    box-sizing: border-box;
 }
-
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
 
 h1,
 h2,
@@ -25,6 +29,7 @@ h6 {
     font-style: normal;
     line-height: 0.4em;
     letter-spacing: 0.01em;
+    clear: left;
 }
 
 
@@ -224,3 +229,32 @@ input{
     background-color: red;
 }
 
+.mainlinks:link {
+    background-color: brown;
+    color: white;
+    display: inline-block;
+    border: 0.1em solid black ;
+    height: 1.5em;
+    width: 9em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.1em;
+}
+
+.historyImage {
+    float : left;
+    height: 250px;
+    width: 500px;
+    padding-right: 2em;
+    padding-bottom: 2.5em;
+}
+
+.mitarbeiter-foto {
+    width: calc(33% - 1em); ;
+    height: 33vw;
+    float: left;
+    border: 1px solid black;
+    padding: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;    
+}
