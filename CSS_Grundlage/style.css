@@ -11,6 +11,7 @@
     letter-spacing: 0.01em;
     box-sizing: border-box;
 }
+
 *,
 ::before,
 ::after {
@@ -67,14 +68,17 @@ a:link {
     text-decoration: none;
 
 }
+
 /* Pseudoklassen für Links */
 a:visited {
     color: #800000;
 }
+
 /* Pseudoklassen für Links */
 a:hover {
     text-decoration: underline;
 }
+
 /* Pseudoklassen für Links */
 a:active {
     color: hsl(0, 100%, 50%);
@@ -152,7 +156,7 @@ div p {
 */
 
 /* Selektor für alle a-Elemente, die direkte Kinder von div-Elementen sind */
-div > a {
+div>a {
     background-color: red;
 }
 
@@ -163,7 +167,7 @@ div + a {
 */
 
 /* Selektor für alle a-Elemente, die Geschwister von div-Elementen sind */
-div ~ a {
+div~a {
     background-color: rgb(255, 0, 0);
 }
 
@@ -177,15 +181,17 @@ div.snacks p:nth-child(2n) {
     background-color: #fff000;
 }
 
-.tableEmployees, th, td {
+.tableEmployees,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
     text-align: left;
-    
+
 }
 
 table.menu {
-   
+
     border: 2px solid black;
     border-collapse: collapse;
 }
@@ -202,29 +208,34 @@ tfoot {
     border: none;
 }
 
-#name::placeholder,#nachname::placeholder,#telefonnummer::placeholder {
+#name::placeholder,
+#nachname::placeholder,
+#telefonnummer::placeholder {
     font-style: italic;
     color: rgb(90, 163, 185);
 }
 
-input{
+input {
     border: 1px solid black;
 }
 
-#name,#nachname {
+#name,
+#nachname {
     background-color: #BBBBFF;
 }
 
-.bewertung td{
+.bewertung td {
     border: none
 }
 
 #arbeitnehmende {
     background-color: #BBBBFF;
 }
+
 #begleitperson:in-range {
     background-color: green;
 }
+
 #begleitperson:out-of-range {
     background-color: red;
 }
@@ -233,7 +244,7 @@ input{
     background-color: brown;
     color: white;
     display: inline-block;
-    border: 0.1em solid black ;
+    border: 0.1em solid black;
     height: 1.5em;
     width: 9em;
     padding-left: 0.5em;
@@ -242,7 +253,7 @@ input{
 }
 
 .historyImage {
-    float : left;
+    float: left;
     height: 250px;
     width: 500px;
     padding-right: 2em;
@@ -250,11 +261,39 @@ input{
 }
 
 .mitarbeiter-foto {
-    width: calc(33% - 1em); ;
+    width: calc(33% - 1em);
+    ;
     height: 33vw;
     float: left;
     border: 1px solid black;
     padding: 1em;
     margin-right: 1em;
-    margin-bottom: 2em;    
+    margin-bottom: 2em;
+}
+
+.copyright {
+    background-color: aquamarine;
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+}
+
+
+.submenu {
+    position: relative;
+    top: o;
+    left: 0;
+}
+.employeelist {
+    position: absolute;
+    top: 0.2em;
+    left: 0;
+    background-color: blue;
+    list-style-type: none;
+    width: 100%;
+    display: none;
+}
+
+.submenu:hover>ul {
+    display: block;
 }
