@@ -12,6 +12,44 @@
 </head>
 
 <body>
+    
+    <button id="open">Newsletter anmelden</button>
+
+   
+    <div class="modal" id="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-body">
+
+            <button id="close">Schliessen</button>
+            <h2>Newsletter</h2>
+            <p>Melde dich an für unseren täglichen Newsletter.</p>
+            <form>
+                <p>
+                    <label for="email">Email-Adresse:</label>
+                    <input type="email" name="email" />
+                </p>
+                <p>
+                    <button type="submit">Anmelden</button></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var button = document.getElementById('open');
+        var close = document.getElementById('close');
+        var modal = document.getElementById('modal');
+
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            modal.style.display = 'block';
+        });
+
+        close.addEventListener('click', function(event) {
+            event.preventDefault();
+            modal.style.display = 'none';
+        });
+    </script>
+    
     <img src="images/Logo.png" alt="Logo der Bäckerei" width="200"><br>
 
     <a href="contact.html" class="mainlinks" title="Kontakt">Kontakt</a>
@@ -147,6 +185,8 @@
     <br><br><br>
 
     <span class="copyright">&copy Nevzat Celik</span>
+
+
 
 </body>
 
