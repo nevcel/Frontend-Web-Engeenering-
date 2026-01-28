@@ -293,7 +293,7 @@ input {
     list-style-type: none;
     width: 100%;
     display: none;
-    
+
 
 }
 
@@ -339,4 +339,42 @@ input {
     position: absolute;
     top: 1em;
     right: 1em;
+}
+
+.mainnav {
+    display: flex;
+    background-color: #5f4b44;
+}
+
+.mainnav>a {
+    color: white;
+    background-color: brown;
+    text-transform: uppercase;
+    margin: auto
+}
+
+.flexVertical {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+}
+
+.flexHorizontal {
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+}
+
+.navigation {
+    min-width: 10em;
+
+}
+
+.maincontent {
+    flex: 1;
+}
+
+div>header {
+    min-height: 5em;
+
 }
